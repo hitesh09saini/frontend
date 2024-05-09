@@ -1,5 +1,7 @@
-import {  Protest_Strike } from "next/font/google";
+import { Protest_Strike } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import Head from "next/head";
 const roboto = Protest_Strike({
   subsets: ["latin"],
   weight: ['400']
@@ -20,7 +22,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FQGQ0V2SD7"></Script>
+        <Script id="google-analytics">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-FQGQ0V2SD7')`}
+        </Script>
+      </head>
       <body suppressHydrationWarning={true} className={`${roboto.className} overflow-x-hidden`} >{children}</body>
     </html>
   );
