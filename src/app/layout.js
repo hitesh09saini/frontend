@@ -1,7 +1,6 @@
 import { Protest_Strike } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Head from "next/head";
 const roboto = Protest_Strike({
   subsets: ["latin"],
   weight: ['400']

@@ -5,7 +5,7 @@ import img from '/public/logo.png'
 import email from '/public/email.gif'
 const Header = () => {
   return (
-    <div className=' flex justify-between items-center sm:px-7 py-2 absolute top-0 left-0 w-full' >
+    <div className='header flex justify-between items-center sm:px-7 py-2 absolute top-[-50px] left-0 w-full' >
       <Link href="/">
         <Image src={img} alt="Logo" width={150} height={100} className='max-sm:w-[100px]' ></Image>
       </Link>

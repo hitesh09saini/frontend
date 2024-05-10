@@ -44,11 +44,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='max-md:hidden absolute top-0 right-0 h-[45vh] w-full border-dashed border-indigo-900 border-0 border-b-2'>
+      <div className='max-md:hidden  absolute top-0 right-0 h-[45vh] w-full border-dashed border-indigo-900 border-0 border-b-2'>
 
       </div>
 
-      <div className='bg-red-400 sm:w-[400px] relative h-[45vh] bg-cover bg-center ' style={{ backgroundImage: `url(${p5.src})` }}>
+      <div className='bg-red-400 dp sm:w-[400px] relative h-[45vh] bg-cover bg-center ' style={{ backgroundImage: `url(${p5.src})` }}>
         <LottieArrow animationData={arrow} className={'absolute bottom-[-100px] left-0 max-sm:hidden w-[25vw]'} />
         
       </div>
@@ -57,7 +57,7 @@ const About = () => {
       <div className="text-center px-4 py-8">
         <h1 className="text-5xl font-bold">Nice to meet you !</h1>
         <p className="mt-4">
-          My name is Hitesh Saini, a Software Engineer. Our journey started when I was pursuing my B.Tech in Electrical Engineering from 2020 to 2024, during my 3rd year, where I explored solving coding problems on various platforms. I believe in embracing all that life has to offer. <span className='text-red-800' >I suggest you explore yourself.</span>
+          My name is Hitesh Saini, a Software Engineer. Our journey started when I was pursuing my B.Tech in Electrical Engineering from 2020 to 2024, during my 3rd year, where I explored solving coding problems on various platforms. I believe in embracing all that life has to offer. <span className='text-red-800 suggestion' >I suggest you explore yourself.</span>
         </p>
       </div>
 

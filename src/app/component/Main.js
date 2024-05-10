@@ -4,6 +4,7 @@ const Main = () => {
   return (
 
     <div className={`select-none min-h-screen relative cursor-none bg-[#EEE9EB] `} data-scroll-container>
+    
       <Header />
       <Hero />
       <About />
@@ -11,6 +12,7 @@ const Main = () => {
       <Experience />
       <Footer />
       <Cursor />
+     
     </div>
   )
 }

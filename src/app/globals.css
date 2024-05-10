@@ -21,3 +21,7 @@ a:hover {
   }
 
   
+  .dp {
+    opacity: 0.2;
+    transform: translate(35vw, 200px) scale(0.3);
+}
