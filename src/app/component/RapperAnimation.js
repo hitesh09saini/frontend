@@ -26,7 +26,6 @@ function RapperAnimation() {
     ];
     
     const [index, setIndex] = useState(0);
-    const [progress, setProgress] = useState("मैं एक योद्धा हूँ।");
 
     useEffect(() => {
         const scroll = new LocomotiveScroll({}); 
@@ -35,8 +34,7 @@ function RapperAnimation() {
                 clearInterval(loadingInterval);
                 animations();
             } else {
-                setIndex(prevIndex => prevIndex + 1);
-                setProgress(array[(index + 1) % array.length]);
+                setIndex(prevIndex => (prevIndex + 1) % array.length);
             }
         }, 150);
 
@@ -44,7 +42,7 @@ function RapperAnimation() {
             clearInterval(loadingInterval);
             scroll.destroy(); 
         };
-    }, [progress]);
+    }, [index, array.length]);
 
     return (
         <div >
@@ -54,7 +52,7 @@ function RapperAnimation() {
                     " अहमस्मि योधः। "
                 </div>
                 <div id='banner-3' className='bg-[#090909] progres w-screen h-1/4 fixed top-2/4 left-0  z-50 text-white flex justify-center items-center text-5xl '>
-                    {progress}
+                    {array[index]}
                 </div>
                 <div id='banner-4' className='bg-[#090909] w-screen h-1/4 fixed top-3/4 left-0  z-50' />
             </div>
