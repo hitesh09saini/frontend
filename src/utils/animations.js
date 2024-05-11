@@ -1,22 +1,7 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import bodymovin from 'bodymovin'
-
 gsap.registerPlugin(ScrollTrigger);
 
-const loti = {
-    container: document.querySelector('.lottie'),
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: '/public/birds.json'
-}
-
-var anim = bodymovin.loadAnimation(loti);
-
-function playThis() {
-    anim.play();
-}
 
 
 const animations = () => {
@@ -75,14 +60,7 @@ const animations = () => {
             }
         });
 
-        // ScrollTrigger.create({
-        //     trigger: ".lottie",
-        //     duration: "100%",
-        //     markers: true,
-        //     start: "top 50%",
-        //     toggleActions: "play null reset reset",
-        //     onEnter: playThis,
-        // });
+       
     }
 };
 

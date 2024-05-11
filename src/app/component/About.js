@@ -3,6 +3,7 @@ import React from 'react'
 import p5 from '/public/p-5.png'
 import LottieArrow from "./LottieArrow";
 import arrow from '/public/arrow.json'
+import birds from '/public/birds.json'
 const About = () => {
   return (
     <div className='min-h-screen bg-[#EEE9EB] pt-8 relative ' >
@@ -41,7 +42,10 @@ const About = () => {
             <span className="mx-4 text-4xl">&#x2022;Hitesh Folio</span>
           </div>
         </div>
+      
       </div>
+      <LottieArrow animationData={birds} className={'absolute top-0 left-0  w-[100vw] z-50'} />
+
       <div className='max-md:hidden  absolute top-0 right-0 h-[45vh] w-full border-dashed border-indigo-900 border-0 border-b-2'>
 
       </div>

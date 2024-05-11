@@ -15,7 +15,7 @@ const Hero = () => {
     
 
     return (
-        <div className="hero min-h-screen box z-0 relative  pt-[60px] flex justify-center items-center " >
+        <div className="hero min-h-screen box z-0 relative  pt-[60px] flex justify-center items-center relative" >
             <h1 title="full-stack developer" className={`text-[10vw]  drop-shadow-2xl relative ${macondo.className}  `}><span className="text-[3vw] absolute top-0 left-[-30px] fullstack"> {text}</span>
                 <span className="developer">D</span>
                 <span className="developer">e</span>
@@ -27,10 +27,10 @@ const Hero = () => {
                 <span className="developer">e</span>
                 <span className="developer ">r
                 </span>
-                <div  className={'absolute bottom-0 left-0 w-full lottie'} ></div>
-                <LottieArrow animationData={birds} className={'absolute bottom-0 left-0 w-full'} />
-
+               
             </h1>
+            <LottieArrow animationData={birds} className={'absolute top-0 left-0  w-[100vw] z-50'}  />
+
             {/* <Image src={my} className="absolute bottom-[50px] right-[10px]" width={100}/> */}
             <Image className="absolute z-40  img rounded-xl left-[5%] bottom-[5%] max-sm:scale-50 " src={p1} alt="Logo" width={60} height={40}></Image>
             {/* <Image className="absolute z-40 img rounded-xl left-[5%] bottom-[20%] max-sm:scale-[0.3]" src={p4} alt="Logo" width={100} height={40}></Image> */}
