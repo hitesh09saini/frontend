@@ -50,7 +50,7 @@ function RapperAnimation() {
             <div>
                 <div id='banner-1' className='bg-[#090909] w-screen h-1/4 fixed top-0 left-0  z-50' />
                 <div id='banner-2' className='bg-[#090909] w-screen h-1/4 fixed top-1/4 left-0  z-50 text-5xl text-white text-center'>
-                    " अहमस्मि योधः। "
+                &quot; अहमस्मि योधः। &quot;
                 </div>
                 <div id='banner-3' className='bg-[#090909] progres w-screen h-1/4 fixed top-2/4 left-0  z-50 text-white flex justify-center items-center text-5xl '>
                     {array[(index + 1) % array.length]}

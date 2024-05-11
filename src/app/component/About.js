@@ -1,7 +1,6 @@
 
 import React from 'react'
 import p5 from '/public/p-5.png'
-import p4 from '/public/p-4.png'
 import LottieArrow from "./LottieArrow";
 import arrow from '/public/arrow.json'
 const About = () => {
