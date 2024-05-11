@@ -4,7 +4,6 @@ import p5 from '/public/p-5.png'
 import p4 from '/public/p-4.png'
 import LottieArrow from "./LottieArrow";
 import arrow from '/public/arrow.json'
-import birds from '/public/birds.json'
 const About = () => {
   return (
     <div className='min-h-screen bg-[#EEE9EB] pt-8 relative ' >
@@ -52,8 +51,7 @@ const About = () => {
         <LottieArrow animationData={arrow} className={'absolute bottom-[-100px] left-0 max-sm:hidden w-[25vw]'} />
         
       </div>
-      <LottieArrow  animationData={birds} className={'absolute bottom-0 left-0 w-full'}/>
-
+   
       <div className="text-center px-4 py-8">
         <h1 className="text-5xl font-bold">Nice to meet you !</h1>
         <p className="mt-4">

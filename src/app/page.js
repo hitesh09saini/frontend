@@ -1,6 +1,5 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-
 // Dynamic import for client-side only components
 const RapperAnimation = dynamic(() => import('./component/RapperAnimation'), {
   ssr: false // This ensures it's not included in server-side rendering

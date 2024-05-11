@@ -1,7 +1,23 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import bodymovin from 'bodymovin'
 
 gsap.registerPlugin(ScrollTrigger);
+
+const loti = {
+    container: document.querySelector('.lottie'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: '/public/birds.json'
+}
+
+var anim = bodymovin.loadAnimation(loti);
+
+function playThis() {
+    anim.play();
+}
+
 
 const animations = () => {
     const bannerOne = document.getElementById('banner-1');
@@ -17,16 +33,20 @@ const animations = () => {
         }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
             xPercent: 100,
             stagger: 0.2
-        }).to('.header', {
+        })
+        .to('.header', {
             top: 0,
             duration: 1,
             ease: "power2.out"
-        }).to('.developer', {
+        });
+
+        gsap.to('.developer', {
             x: 20,
             stagger: 0.1,
             opacity: 1,
+            delay: 0.7,
             ease: "power2.out"
-        })
+        });
 
         gsap.to('.fullstack', {
             rotate: -3,
@@ -52,11 +72,17 @@ const animations = () => {
                 end: "top 80%",
                 scrub: 2,
                 // markers: true
-
             }
         });
 
-
+        // ScrollTrigger.create({
+        //     trigger: ".lottie",
+        //     duration: "100%",
+        //     markers: true,
+        //     start: "top 50%",
+        //     toggleActions: "play null reset reset",
+        //     onEnter: playThis,
+        // });
     }
 };
 

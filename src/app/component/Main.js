@@ -3,7 +3,7 @@ import { Header, Hero, Cursor, About, Projects, Footer, Experience } from './exp
 const Main = () => {
   return (
 
-    <div className={`select-none min-h-screen relative cursor-none bg-[#EEE9EB] `} data-scroll-container>
+    <div className={`select-none min-h-screen relative cursor-none bg-[#EEE9EB] main`} data-scroll-container>
     
       <Header />
       <Hero />

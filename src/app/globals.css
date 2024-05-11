@@ -4,24 +4,95 @@
 
 
 
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
 .developer {
-    display: inline-block;
-    opacity: 0.1;
-    transform: translateX(-150px); /* Initial position */
-  }
+  display: inline-block;
+  opacity: 0.1;
+  transform: translateX(-150px);
+  /* Initial position */
+}
 
 a:hover {
-    text-decoration: underline;
-  }
-
+  transform: translateY(-2px);
+  text-decoration: underline;
   
-  .dp {
-    opacity: 0.2;
-    transform: translate(35vw, 200px) scale(0.3);
 }
+
+a{
+  z-index: 10000;
+}
+
+
+.dp {
+  opacity: 0.2;
+  transform: translate(35vw, 200px) scale(0.3);
+}
+
+
+.birds {
+  display: none;
+}
+
+.progres{
+  font-family: “Open Sans”, sans-serif;
+  color: #f5f5f5;
+  z-index: 10000;
+  text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
+}
+
+.main::after{
+  content: "";
+  background-image: url(
+    'https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png'
+  );
+  width: 200%;
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  animation: animationGain 8s steps(10) infinite;
+}
+
+
+@keyframes animationGain {
+  0% ,
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, -20%);
+  }
+  30% {
+    transform: translate(-5%, -10%)
+  }
+  40% {
+    transform: translate(-15%, -20%);
+  }
+  50% {
+    transform: translate(-5%, -10%)
+  }
+  60% {
+    transform: translate(-15%, -20%);
+  }
+  70% {
+    transform: translate(-5%, -10%)
+  }
+  80% {
+    transform: translate(-15%, -20%);
+  }
+  90% {
+    transform: translate(-5%, -10%)
+  }
+  100% {
+    transform: translate(-15%, -20%);
+  }
+}
+

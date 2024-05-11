@@ -3,7 +3,7 @@ import React from 'react'
 import { Holtwood_One_SC } from "next/font/google";
 import wave from '/public/music.gif'
 import p1 from '/public/p-1.jpg'
-import birds from '/public/birds.json'
+
 import LottieArrow from "./LottieArrow";
 const macondo = Holtwood_One_SC({
     subsets: ["latin"],
@@ -27,7 +27,7 @@ const Hero = () => {
                 <span className="developer">e</span>
                 <span className="developer ">r
                 </span>
-                <LottieArrow animationData={birds} className={'absolute bottom-0 left-0 w-full'} />
+                <div  className={'absolute bottom-0 left-0 w-full lottie'} ></div>
 
             </h1>
             {/* <Image src={my} className="absolute bottom-[50px] right-[10px]" width={100}/> */}

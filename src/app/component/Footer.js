@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import qr from '/public/qr.jpg'
-import { Inconsolata} from "next/font/google";
+import { Inconsolata } from "next/font/google";
 const Inconsola = Inconsolata({
   subsets: ["latin"],
   weight: ['400']
@@ -21,15 +21,14 @@ const Footer = () => {
               <a href="https://www.instagram.com/hiteshsaini__09/" target="_blank" rel="noopener noreferrer">INSTAGRAN<i className="ri-arrow-right-up-line ri-arrow-right-line text-2xl"></i></a>
               <a href="https://github.com/hitesh09saini" target="_blank" rel="noopener noreferrer">GITHUB<i className="ri-arrow-right-up-line ri-arrow-right-line text-2xl"></i></a>
             </div>
+
             <a href="mailto:hitesh9694saini@gmail" target="_blank" rel="noopener noreferrer" className='sm:text-3xl text-gray-500'>hitesh9694saini@gmail.com</a>
           </div>
         </div>
-        <p className={`  ${Inconsola.className}`}>
-          <a href="https://www.google.com/maps/place/Mahwa,+Rajasthan+321608/@27.0388324,76.95027,13.03z/data=!4m6!3m5!1s0x39724411e60e0143:0xdbbeb549b294918b!8m2!3d27.046209!4d76.9260755!16zL20vMGY1Z3lx?entry=ttu" target="_blank" rel="noopener noreferrer">
-          <b>Hometown:</b> MAHWA, DAUSA, RAJASTHAN
+          <a  className={`  ${Inconsola.className}`} href="https://www.google.com/maps/place/Mahwa,+Rajasthan+321608/@27.0388324,76.95027,13.03z/data=!4m6!3m5!1s0x39724411e60e0143:0xdbbeb549b294918b!8m2!3d27.046209!4d76.9260755!16zL20vMGY1Z3lx?entry=ttu" target="_blank" rel="noopener noreferrer">
+            <b>Hometown:</b> MAHWA, DAUSA, RAJASTHAN
           </a>
-        </p>
-
+        
       </div>
     </div>
   )
