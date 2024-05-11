@@ -10,7 +10,7 @@ const LottieArrow = ({ animationData, className }) => {
       container: container.current,
       animationData: animationData,
       renderer: 'svg', 
-      loop: false,
+      loop: 1,
       autoplay: true,
     });
   }, []);
