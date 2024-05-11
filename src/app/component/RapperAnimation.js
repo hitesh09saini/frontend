@@ -26,7 +26,7 @@ function RapperAnimation() {
     ];
     
     const [index, setIndex] = useState(0);
-    const [progress, setProgress] = useState(array[index]);
+    const [progress, setProgress] = useState("मैं एक योद्धा हूँ।");
 
     useEffect(() => {
         const scroll = new LocomotiveScroll({}); 
