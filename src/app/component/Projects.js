@@ -32,7 +32,7 @@ const projects = [
 const Projects = () => {
     return (
         <div className=' mb-[100px] bg-[#EEE9EB] pt-8 relative p-6 flex flex-col gap-8'>
-            <h1 className='text-4xl'>PROJECTS</h1>
+            <h1 className='text-4xl'>PROJECTS !</h1>
             {projects.map((project, index) => (
                 <Project key={index} title={project.title} description={project.description} link={project.link} />
             ))}
