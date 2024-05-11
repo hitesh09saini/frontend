@@ -13,6 +13,8 @@ const Main = () => {
       <Footer />
       <Cursor />
      
+
+     
     </div>
   )
 }
