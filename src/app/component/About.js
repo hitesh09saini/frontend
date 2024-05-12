@@ -44,7 +44,7 @@ const About = () => {
         </div>
       
       </div>
-      <LottieArrow animationData={birds} className={'absolute top-0 left-0  w-[100vw] z-50'} />
+      <LottieArrow animationData={birds} className={'absolute top-0 left-0 h-[100vh]  w-[100vw] z-50'} />
 
       <div className='max-md:hidden  absolute top-0 right-0 h-[45vh] w-full border-dashed border-indigo-900 border-0 border-b-2'>
 
