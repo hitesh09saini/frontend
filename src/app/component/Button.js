@@ -36,7 +36,7 @@ const Button = () => {
     }
 
     return (
-        <div onClick={handleClick} onMouseLeave={() => { setHidden(false) }} onMouseEnter={() => { setHidden(true), onImg() }} className="absolute z-50 max-sm:bottom-0 bottom-[20px] right-[20px] flex items-center max-sm:scale-50 gap-4 cursor-pointer">
+        <div title='foreveR - TEGI PANNU' onClick={handleClick} onMouseLeave={() => { setHidden(false) }} onMouseEnter={() => { setHidden(true), onImg() }} className="absolute z-50 max-sm:bottom-0 bottom-[20px] right-[20px] flex items-center max-sm:scale-50 gap-4 cursor-pointer">
             <Image src={wave} alt="song" />
             <ReactAudioPlayer
                 ref={ref}
