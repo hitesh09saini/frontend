@@ -47,7 +47,7 @@ function RapperAnimation() {
 
     return (
         <div >
-            <div>
+            <div className='select-none'>
                 <div id='banner-1' className='bg-[#090909] w-screen h-1/4 fixed top-0 left-0  z-50' />
                 <div id='banner-2' className='bg-[#090909] w-screen h-1/4 fixed top-1/4 left-0  z-50 text-5xl text-white text-center max-md:text-xl'>
                 &quot; अहमस्मि योधः। &quot;

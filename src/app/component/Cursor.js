@@ -44,9 +44,9 @@ const Cursor = () => {
       <div
         style={{ left: `${position.x - 10}px`, top: `${position.y - 10}px` }}
         ref={cursorRef}
-        className={`p-0  fixed overflow-hidden pointer-events-none z-50 rounded-full w-4 h-4 border  ${clicked ? "scale-150 border-[#6a0afa]" : `border-[#000000]`} `}
+        className={`p-0  fixed overflow-hidden pointer-events-none z-50 rounded-full w-5 h-5 border cursor flex justify-center items-center  ${clicked ? "scale-150 border-[#6a0afa]" : `border-[#000000]`} `}
       >
-       
+       <div ></div>
       </div>
     </>
   );

@@ -3,15 +3,15 @@ import { Header, Hero, Cursor, About, Projects, Footer, Experience } from './exp
 const Main = () => {
   return (
 
-    <div className={`select-none min-h-screen relative  bg-[#EEE9EB] main`} data-scroll-container>
-    
+    <div className={`select-none min-h-screen relative cursor-none bg-[#EEE9EB] main`} data-scroll-container>
+     <Cursor />
       <Header />
       <Hero />
       <About />
       <Projects />
       <Experience />
       <Footer />
-      <Cursor />
+     
      
 
      
