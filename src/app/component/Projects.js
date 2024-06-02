@@ -27,11 +27,7 @@ const projects = [
         description: 'This project manages my tasks and incorporates some new technologies. It\'s really helpful.',
         link: 'https://task-board-front.vercel.app/'
     },
-    {
-        title: 'AGE Commerce Classes',
-        description: 'The website is for educational purposes only. I am not responsible for the content.',
-        link: 'https://ageclasses.in/'
-    }
+   
 ];
 
 const Projects = () => {

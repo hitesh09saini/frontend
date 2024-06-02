@@ -39,6 +39,10 @@ const Hero = () => {
             {/* <Image className="absolute z-40 img rounded-xl left-[5%] bottom-[20%] max-sm:scale-[0.3]" src={p4} alt="Logo" width={100} height={40}></Image> */}
 
             <Button  />
+
+            <div className="px-4 py-1 border border-dashed border-gray-400 text-gray-400 text-[10px] absolute top-[20px] right-[8%] rounded-2xl">
+                Version 0.0.1
+            </div>
         </div>
     )
 }
