@@ -1,4 +1,6 @@
 import { Protest_Strike } from "next/font/google";
+import Head from 'next/head';
+
 import "./globals.css";
 import Script from "next/script";
 const roboto = Protest_Strike({
@@ -21,7 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <Head>
+        <title>Hitesh Saini</title>
+        <meta name="description" content="Hitesh Saini का पोर्टफोलियो." />
+      </Head>
       <body suppressHydrationWarning={true} className={`${roboto.className} overflow-x-hidden`} >{children}</body>
     </html>
   );
