@@ -1,7 +1,7 @@
 import { Protest_Strike } from "next/font/google";
 import Head from 'next/head';
 import "./globals.css";
-import ServiceWorkerRegister from "../../ServiceWorkerRegister";
+import ServiceWorkerRegister from "./ServiceWorkerRegister";
 
 const roboto = Protest_Strike({
   subsets: ["latin"],
