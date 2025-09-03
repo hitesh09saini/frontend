@@ -11,13 +11,14 @@ const roboto = Protest_Strike({
 export const metadata = {
   title: "Hitesh Folio",
   description: "Portfolio of Hitesh Saini",
-  manifest: '/site.webmanifest',
+  manifest: "/site.webmanifest",   
   icons: {
-    icon: ['/favicon.ico?v=4'],
-    apple: ['/apple-touch-icon.png?v=4'],
-    shortcut: ['/apple-touch-icon.png'],
-  }
+    icon: ["/favicon.ico?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (

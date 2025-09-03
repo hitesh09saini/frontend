@@ -1,12 +1,11 @@
-
 const CACHE_NAME = "next-app-cache-v1";
 const urlsToCache = [
   "/", 
   "/favicon.ico",
-  "/manifest.json",
+  "/site.webmanifest",
 ];
 
-// Install event: cache essential files
+// Install event → cache essential files
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -15,25 +14,40 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Fetch event: return cached response or fetch new
+// Fetch event → cache-first strategy
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
-        return cachedResponse; // ✅ Return cached page/assets
+        return cachedResponse; // ✅ Serve from cache if available
       }
-      return fetch(event.request).then((response) => {
-        // Optional: add new fetched resource to cache
-        return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, response.clone());
+
+      // Fetch from network & store in cache
+      return fetch(event.request)
+        .then((response) => {
+          // Only cache valid responses (status 200, type basic = same-origin)
+          if (!response || response.status !== 200 || response.type !== "basic") {
+            return response;
+          }
+
+          const responseToCache = response.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+
           return response;
+        })
+        .catch(() => {
+          // Optional: fallback page when offline
+          if (event.request.mode === "navigate") {
+            return caches.match("/");
+          }
         });
-      });
     })
   );
 });
 
-// Activate event: clean old caches
+// Activate event → cleanup old caches
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
